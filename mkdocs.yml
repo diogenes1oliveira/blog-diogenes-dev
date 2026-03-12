@@ -5,17 +5,20 @@ site_url: https://blog.diogenes.dev/
 docs_dir: docs
 
 nav:
+  - Home: index.md
   - Posts:
       - Index: posts/index.md
-      - O Surto - The Mother Of All Nightmares: posts/001-o-surto.md
+      - O Surto - The Mother Of All Nightmares: posts/001-o-surto-the-mother-of-all-nightmares.md
   - Dev & AI stuff:
-      - Home: dev/index.md
-      - Setup: dev/SETUP.md
-      - Chat History: dev/CHATs.md
-      - Protocol: dev/PROTOCOL.md
-      - Agents Guide: dev/AGENTS.md
-      - LLM Parameters: dev/LLM-PARAMs.md
-      - Deployment Checklist: ci/DEPLOYMENT.md
+      - Development:
+          - Home: dev/index.md
+          - Setup: dev/SETUP.md
+          - Chat History: dev/CHATs.md
+          - Protocol: dev/PROTOCOL.md
+          - Agents Guide: dev/AGENTS.md
+          - LLM Parameters: dev/LLM-PARAMs.md
+      - CI/CD:
+          - Deployment Checklist: ci/DEPLOYMENT.md
 
 theme:
   name: material
