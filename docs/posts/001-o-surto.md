@@ -4,19 +4,19 @@
 
 ## The Mother Of All Nightmares 🇬🇧
 
-> Line 1  
-> Line 2  
-> Line 3  
-> Line 4
+> From Hell back I came  
+> To Death: "not today"  
+> Defiance out on display  
+> And, to Morpheus: "_sou rei_"
 
 ---
 
 ## O Pesadelo dos Pesadelos 🇧🇷
 
-> Line 1  
-> Line 2  
-> Line 3  
-> Line 4
+> Eu fui no inferno e voltei  
+> O dedo do meio dei  
+> Pra própria morte c\*guei  
+> E para Morfeus "_sou rei_"
 
 ---
 
