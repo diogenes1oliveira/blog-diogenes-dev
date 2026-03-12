@@ -8,7 +8,9 @@ nav:
   - Home: index.md
   - Posts:
       - Index: posts/index.md
-      - O Surto - The Mother Of All Nightmares: posts/001-o-surto-the-mother-of-all-nightmares.md
+      - O Surto - The Mother Of All Nightmares (🇬🇧🇧🇷): posts/001-o-surto-the-mother-of-all-nightmares.md
+      - O que devemos um ao outro (e a nós mesmos) (🇧🇷): posts/002-o-que-devemos-um-ao-outro.md
+
   - Dev & AI stuff:
       - Development:
           - Home: dev/index.md
@@ -39,19 +41,44 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.expand
     - content.code.copy
+    - content.code.annotate
     - search.suggest
     - search.highlight
 
 plugins:
   - search
+  - section-index
+  - privacy
+  - tags
+  - htmlproofer:
+      enabled: !ENV [CI, false]
+      raise_error: true # Fail build on broken links
+  - gen-files:
+      scripts:
+        - src/mkdocs_customize/gen_pages.py
+
+extra_javascript:
+  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
+  - src/mkdocs_customize/mermaid-init.js
 
 markdown_extensions:
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.inlinehilite
+  - pymdownx.snippets
   - admonition
   - pymdownx.details
   - attr_list
-  - tables
+  - md_in_html
+  - mdx_outline

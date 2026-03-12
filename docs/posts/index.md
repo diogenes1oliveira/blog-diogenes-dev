@@ -1,1 +1,2 @@
 - [O Surto - The Mother Of All Nightmares](./001-o-surto-the-mother-of-all-nightmares.md)
+- [O que devemos um ao outro (e a nós mesmos) (🇧🇷)](./002-o-que-devemos-um-ao-outro.md)
