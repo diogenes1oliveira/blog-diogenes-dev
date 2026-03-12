@@ -1,0 +1,11 @@
+{
+  "$schema": "https://unpkg.com/wrangler@4.65.0/config-schema.json",
+  "name": "blog-diogenes-dev",
+  "compatibility_date": "2026-03-12",
+  "routes": [
+    {
+      "pattern": "blog.diogenes.dev",
+      "custom_domain": true
+    }
+  ]
+}

@@ -1,24 +1,20 @@
-site_name: Cine Holliu
-site_description: A drugless trip through the Fundamentals of Prompt Engineering
-# Update to https://001481.xyz/ when serving from Cloudflare Pages
-site_url: https://001481.xyz/
+site_name: Dodge's Blog
+site_description: A blog about programming, data engineering and even more random stuff
+site_url: https://blog.diogenes.dev/
 
 docs_dir: docs
 
 nav:
-  - Home: README.md
   - Posts:
       - Index: posts/index.md
-      - O Surto: posts/001-o-surto.md
-  - Development:
+      - O Surto - The Mother Of All Nightmares: posts/001-o-surto.md
+  - Dev & AI stuff:
       - Home: dev/index.md
       - Setup: dev/SETUP.md
       - Chat History: dev/CHATs.md
       - Protocol: dev/PROTOCOL.md
       - Agents Guide: dev/AGENTS.md
       - LLM Parameters: dev/LLM-PARAMs.md
-  - CI/CD:
-      - Home: ci/index.md
       - Deployment Checklist: ci/DEPLOYMENT.md
 
 theme:

@@ -26,6 +26,7 @@ lint-yaml any="":
 # Build the prod documentation
 [group('ci')]
 build:
+    rm -rf site/
     uv run mkdocs build
 
 # Convert all markdown files to HTML and chatbot YAML
@@ -33,7 +34,7 @@ build:
 md2html out="out":
     uv run python .dev/md2html.py --out-dir {{ out }}
 
-# Deploy the prod documentation to GitHub Pages
+# Deploy the site to Cloudflare Pages
 [group('ci')]
-deploy:
-    uv run mkdocs build
+deploy: build
+    npx wrangler pages deploy ./site
