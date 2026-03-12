@@ -18,6 +18,7 @@ nav:
           - Agents Guide: dev/AGENTS.md
           - LLM Parameters: dev/LLM-PARAMs.md
       - CI/CD:
+          - Home: ci/index.md
           - Deployment Checklist: ci/DEPLOYMENT.md
 
 theme:
