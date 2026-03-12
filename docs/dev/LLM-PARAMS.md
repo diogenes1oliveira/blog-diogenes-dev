@@ -32,7 +32,7 @@
 
 If the repo is **public**, anyone with the PR link can see:
 
-- Every file committed by the agent (including `CHATs.md`, which contains the full conversation).
+- Every file committed by the agent (including `CHATS.md`, which contains the full conversation).
 - Commit messages, PR description, and the diff.
 - **Nothing** about temperature, system prompt, model version, or seed — those never appear in Git.
 
@@ -90,7 +90,7 @@ Even if someone had **all** the parameters listed in section 1, exact reproducti
 
 At best, with all parameters + conversation history + seed + temperature = 0, you get **statistically similar** outputs — not byte-identical.
 
-The conversation history itself (the messages) is the **most important** factor for reproducibility, since that's what conditions the model's outputs. If `CHATs.md` is public, that's what gives someone the best chance.
+The conversation history itself (the messages) is the **most important** factor for reproducibility, since that's what conditions the model's outputs. If `CHATS.md` is public, that's what gives someone the best chance.
 
 ---
 
@@ -103,7 +103,7 @@ The conversation history itself (the messages) is the **most important** factor 
 | Someone queries the model version via API                 | Not possible without your API key — no public endpoint exposes per-session params.                                                                                                     |
 | Someone intercepts traffic with a MITM proxy              | Not applicable for server-side agent runs. For client-side Copilot (IDE), use certificate pinning or VPN.                                                                              |
 | Someone infers the system prompt by probing the model     | "Prompt extraction" attacks — ask the model to repeat its instructions. Mitigation: the system prompt usually instructs the model to refuse. Nothing you can enforce on GitHub's side. |
-| `CHATs.md` leaks the conversation                         | Keep repo private. Optionally encrypt sensitive turns before committing.                                                                                                               |
+| `CHATS.md` leaks the conversation                         | Keep repo private. Optionally encrypt sensitive turns before committing.                                                                                                               |
 | `system_fingerprint` reveals model build                  | Low risk; fingerprint doesn't expose temperature or system prompt. Acceptable.                                                                                                         |
 
 ---
@@ -117,7 +117,7 @@ The conversation history itself (the messages) is the **most important** factor 
 | Model version        | `model` (request) / `model` (response)    | Via MITM or `system_fingerprint`          | mitmproxy; response metadata |
 | Embeddings version   | Separate API call's `model` param         | Only if embeddings are called client-side | mitmproxy                    |
 | Current UTC time     | Injected into system prompt               | Via MITM (see system prompt)              | mitmproxy                    |
-| Conversation history | `messages` array                          | Via public repo / `CHATs.md`              | GitHub; browser              |
+| Conversation history | `messages` array                          | Via public repo / `CHATS.md`              | GitHub; browser              |
 
 ---
 
@@ -141,4 +141,4 @@ The OpenAI (and Anthropic) REST APIs are **stateless** — there is no "session 
 ---
 
 > _Written for Turn #10 of the `cine-holliu` conversation log._
-> _See [`CHATs.md`](CHATs.md) for the full thread._
+> _See [`CHATS.md`](CHATS.md) for the full thread._

@@ -3,7 +3,7 @@
 ## Prompt History Convention
 
 Every time an agent works on this repository, it **must** append both sides of
-the current conversation turn to [dev/CHATs.md](CHATs.md) as two separate, fenced plaintext
+the current conversation turn to [dev/CHATS.md](CHATS.md) as two separate, fenced plaintext
 code blocks — **in this order**:
 
 1. **User block** — the exact user message that triggered this session.
@@ -34,12 +34,12 @@ code blocks — **in this order**:
 
 ---
 
-## ⚠️ CHATs.md Convention — PRIMARY PROTOCOL (supersedes PROMPT.md) ⚠️
+## ⚠️ CHATS.md Convention — PRIMARY PROTOCOL (supersedes PROMPT.md) ⚠️
 
-**Every agent session must update `CHATs.md`** — the canonical conversation log.
+**Every agent session must update `CHATS.md`** — the canonical conversation log.
 The `PROMPT.md` section above is **legacy**; once `PROTOCOL.md` exists, skip it.
 
-### CHATs.md turn structure
+### CHATS.md turn structure
 
 ```markdown
 ## Turn #N — <short description>
@@ -95,12 +95,12 @@ Files every agent should know exist in this repository:
 
 | File                     | Purpose                                                                             |
 | ------------------------ | ----------------------------------------------------------------------------------- |
-| `PROMPT.md`              | Legacy per-turn conversation log (append-only, superseded by `CHATs.md`)            |
-| `CHATs.md`               | Canonical conversation log — primary protocol                                       |
-| `PROTOCOL.md`            | Self-contained spec for the `CHATs.md` format                                       |
+| `PROMPT.md`              | Legacy per-turn conversation log (append-only, superseded by `CHATS.md`)            |
+| `CHATS.md`               | Canonical conversation log — primary protocol                                       |
+| `PROTOCOL.md`            | Self-contained spec for the `CHATS.md` format                                       |
 | `AGENTS.md`              | This file — conventions and key-file reference for agents                           |
 | `EASTEREGG.md`           | Launch easter egg: lights-off (📴) terminal-style alert `$ ⏎` + upcoming issue note |
 | `docs/index.md`          | Main documentation home page                                                        |
-| `docs/dev/LLM-PARAMs.md` | LLM session-parameters reference (privacy, exposure, reproducibility)               |
+| `docs/dev/LLM-PARAMS.md` | LLM session-parameters reference (privacy, exposure, reproducibility)               |
 | `docs/ci/DEPLOYMENT.md`  | Pre-flight deployment checklist                                                     |
 | `mkdocs.yml`             | MkDocs site configuration and nav                                                   |

@@ -9,12 +9,12 @@
 ### Privacy & confidentiality
 
 - [ ] **Repository is set to Private.**
-      The conversation log (`dev/CHATs.md`) and protocol files contain a full record of this
+      The conversation log (`dev/CHATS.md`) and protocol files contain a full record of this
       session. If you do not want it public, the repo **must** be private before you share
       the live URL with anyone.
 - [ ] **No API keys, tokens, or credentials appear in any committed file.**
       Run a quick scan: `git grep -r "sk-" && git grep -r "ghp_"` — both should return nothing.
-- [ ] **`CHATs.md` does not contain anything you consider sensitive.**
+- [ ] **`CHATS.md` does not contain anything you consider sensitive.**
       Review the conversation log. If needed, redact entries before deploying.
 - [ ] **`docs/llm-parameters.md` is intentional.**
       This file documents LLM session parameters and privacy considerations.
@@ -46,9 +46,9 @@ To serve the site from your own domain (e.g. **001481.xyz**) on Cloudflare:
 
 1. **Workflow:** Use `.github/workflows/deploy-cloudflare.yml`. It builds with MkDocs and deploys the `site/` output to Cloudflare Pages via `wrangler-action`.
 2. **Secrets:** In GitHub → Settings → Secrets and variables → Actions, add:
-   - `CLOUDFLARE_API_TOKEN` (token with "Cloudflare Pages — Edit")
-   - `CLOUDFLARE_ACCOUNT_ID` (from Cloudflare dashboard)
-   - `CLOUDFLARE_PAGES_PROJECT_NAME` (e.g. `cine-holliu` — the name of your Pages project)
+    - `CLOUDFLARE_API_TOKEN` (token with "Cloudflare Pages — Edit")
+    - `CLOUDFLARE_ACCOUNT_ID` (from Cloudflare dashboard)
+    - `CLOUDFLARE_PAGES_PROJECT_NAME` (e.g. `cine-holliu` — the name of your Pages project)
 3. **Pages project:** In Cloudflare dashboard, Workers & Pages → Create → Pages → create a project (or let the first deploy create it if supported).
 4. **Custom domain:** In your Pages project → Custom domains → add **001481.xyz** and follow DNS instructions.
 5. **Switch over:** You can disable or remove `deploy.yml` (GitHub Pages) once Cloudflare is working. Ensure `site_url` in `mkdocs.yml` is `https://001481.xyz/`.
@@ -59,8 +59,8 @@ To serve the site from your own domain (e.g. **001481.xyz**) on Cloudflare:
 
 | Item                                           | Why                                             |
 | ---------------------------------------------- | ----------------------------------------------- |
-| This repo URL (while public)                   | Exposes full conversation history in `CHATs.md` |
-| Direct link to `CHATs.md`                      | Contains verbatim session transcript            |
+| This repo URL (while public)                   | Exposes full conversation history in `CHATS.md` |
+| Direct link to `CHATS.md`                      | Contains verbatim session transcript            |
 | Your GitHub API / Copilot subscription details | Personal credentials                            |
 | The system prompt contents                     | Internal agent instructions                     |
 
@@ -76,4 +76,4 @@ To serve the site from your own domain (e.g. **001481.xyz**) on Cloudflare:
 
 ---
 
-> _See [LLM Parameters](../dev/LLM-PARAMs.md) for the full privacy and reproducibility analysis._
+> _See [LLM Parameters](../dev/LLM-PARAMS.md) for the full privacy and reproducibility analysis._

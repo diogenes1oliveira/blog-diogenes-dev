@@ -1,4 +1,4 @@
-# O que devemos um ao outro (e a nós mesmos) (🇧🇷)
+# O que devemos uns ao outros
 
 - Escutar o outro **de verdade**;
 - **Respeitar** o tempo, a vez, a história, o espaço e a identidade de cada um;

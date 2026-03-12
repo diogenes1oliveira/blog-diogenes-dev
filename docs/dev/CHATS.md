@@ -1,4 +1,4 @@
-# Chat History — cine-holliu
+# CHATS.md — Conversation Logs
 
 Canonical conversation log for this repository.
 See [PROTOCOL.md](PROTOCOL.md) for the format specification.
@@ -188,38 +188,38 @@ Updated `PROMPT.md` with this turn accordingly.
 
 ---
 
-## Turn #7 — Introduce CHATs.md and PROTOCOL.md; define full format spec
+## Turn #7 — Introduce CHATS.md and PROTOCOL.md; define full format spec
 
 ### Message #0 — @human
 
 ````
-Ok, now you should actually follow that advice for now on, be mindful of that. Append my next request to AGENTS.md,  in the best way you think  you'll actually remember every time it's very important: you should always put your full comment speech as a nicely formatted markdown with your verbatim comment like code blocks and all , put the ```markdown``` in those code blocks, the `` for the technical terms/code, etc. Then what I say next as well, but for mine (btw I'm the one that always starts a "turn") should be the verbatim plain code text I typed in this box. And of course, seems we have now a turn counter, you should just put a nice markdown header there describing something like ## turn #N  ### message #0 agent: @human ### agent: bot. That's the protocol for CHATs.md. Do it now, and do it retroactively: I want our full thread there, what I said and what you said, clearly labeled. Even if I'm only requesting it now, you should always just update the file and keep the conversation history report consistent as much as you reasonably can. For instance: if there's a message of mine missing in the sequence (how would you know that? well I start a new turn counter and my message, as the human, is always message #0). So you should just see this very own chat interface history that you actually remember what I said and you can fill in the gaps. Likewise for your own comments: you can always try to fill in the gaps. The protocol, then is very simple: you can read line by line, check for lines that start with ## for turn titles, then you can extract the counter just like a very simple string parsing stuff. Then you have the boundaries for each turn content. Within these boundaries, you should find the next ### line and try again to get the message description of role of the agent who said it and message counter. Got it? update your AGENTS.md with some way that you'll actually remember it: there'll a kind of "pop quiz" I'm gonna do it next. So again, add a CHATs.md with this very own thread of ours with how you think I'd like this markdown to look like before even reading the next paragraph.
+Ok, now you should actually follow that advice for now on, be mindful of that. Append my next request to AGENTS.md,  in the best way you think  you'll actually remember every time it's very important: you should always put your full comment speech as a nicely formatted markdown with your verbatim comment like code blocks and all , put the ```markdown``` in those code blocks, the `` for the technical terms/code, etc. Then what I say next as well, but for mine (btw I'm the one that always starts a "turn") should be the verbatim plain code text I typed in this box. And of course, seems we have now a turn counter, you should just put a nice markdown header there describing something like ## turn #N  ### message #0 agent: @human ### agent: bot. That's the protocol for CHATS.md. Do it now, and do it retroactively: I want our full thread there, what I said and what you said, clearly labeled. Even if I'm only requesting it now, you should always just update the file and keep the conversation history report consistent as much as you reasonably can. For instance: if there's a message of mine missing in the sequence (how would you know that? well I start a new turn counter and my message, as the human, is always message #0). So you should just see this very own chat interface history that you actually remember what I said and you can fill in the gaps. Likewise for your own comments: you can always try to fill in the gaps. The protocol, then is very simple: you can read line by line, check for lines that start with ## for turn titles, then you can extract the counter just like a very simple string parsing stuff. Then you have the boundaries for each turn content. Within these boundaries, you should find the next ### line and try again to get the message description of role of the agent who said it and message counter. Got it? update your AGENTS.md with some way that you'll actually remember it: there'll a kind of "pop quiz" I'm gonna do it next. So again, add a CHATS.md with this very own thread of ours with how you think I'd like this markdown to look like before even reading the next paragraph.
 
-Got it? If you got it, okay. Now you can, based on just AGENTS.md and CHATs.md, describe a PROTOCOL.md with these exact instructions for the next fellow agent to also follow. And if you do it well, we can stop updating PROMPT.md
+Got it? If you got it, okay. Now you can, based on just AGENTS.md and CHATS.md, describe a PROTOCOL.md with these exact instructions for the next fellow agent to also follow. And if you do it well, we can stop updating PROMPT.md
 ````
 
 ### Message #1 — Agent
 
-Updated `AGENTS.md` with the full `CHATs.md` format spec: turn/message header format,
+Updated `AGENTS.md` with the full `CHATS.md` format spec: turn/message header format,
 human-vs-agent block styles, retroactive reconstruction rules, gap detection, and parser pseudocode.
 
-Created `CHATs.md` (this file) with the complete retroactive conversation history for Turns 1–7.
+Created `CHATS.md` (this file) with the complete retroactive conversation history for Turns 1–7.
 Agent responses for Turns 1–5 are marked `<!-- reconstructed -->` since they predate the logging convention.
 
 Created `PROTOCOL.md` as the self-contained canonical spec — future agents only need to read that file.
 
-Appended this turn's blocks to `PROMPT.md` for the last time; `CHATs.md` is the canonical log going forward.
+Appended this turn's blocks to `PROMPT.md` for the last time; `CHATS.md` is the canonical log going forward.
 
 ```markdown
 Got it — and done! Here's what I've created/updated:
 
-- **`AGENTS.md`** — updated with the full `CHATs.md` protocol: turn/message header format,
+- **`AGENTS.md`** — updated with the full `CHATS.md` protocol: turn/message header format,
   human-vs-agent block styles, retroactive reconstruction rules, gap detection, and parser pseudocode.
-- **`CHATs.md`** (new) — complete retroactive conversation history, Turns 1–7.
+- **`CHATS.md`** (new) — complete retroactive conversation history, Turns 1–7.
   Agent responses for Turns 1–5 are marked `<!-- reconstructed -->`.
 - **`PROTOCOL.md`** (new) — self-contained spec; future agents only need to read this file.
 - **`PROMPT.md`** — appended this turn's blocks. This is the **last** `PROMPT.md` update;
-  `CHATs.md` is the canonical log going forward.
+  `CHATS.md` is the canonical log going forward.
 
 **Security Summary:** Documentation-only changes. No vulnerabilities introduced.
 ```
@@ -227,8 +227,8 @@ Got it — and done! Here's what I've created/updated:
 #### Files Accessed
 
 - `PROMPT.md` — read (for retroactive reconstruction) and appended for the last time
-- `AGENTS.md` — read and updated with the full CHATs.md protocol spec
-- `CHATs.md` — created with retroactive conversation history (Turns 1–7)
+- `AGENTS.md` — read and updated with the full CHATS.md protocol spec
+- `CHATS.md` — created with retroactive conversation history (Turns 1–7)
 - `PROTOCOL.md` — created as the canonical self-contained spec
 
 ---
@@ -238,19 +238,19 @@ Got it — and done! Here's what I've created/updated:
 ### Message #0 — @human
 
 ```
-What's taking you so long? You're almost there. Remember; I can see your thinking. Only thing I would add to your idea is: I would just quickly correct you, very gently, that I want your full response verbatim as nice markdown to CHATs.md as well
+What's taking you so long? You're almost there. Remember; I can see your thinking. Only thing I would add to your idea is: I would just quickly correct you, very gently, that I want your full response verbatim as nice markdown to CHATS.md as well
 ```
 
 ### Message #1 — Agent
 
-Clarified the `CHATs.md` agent-block format: the ` ```markdown ` fence must contain the agent's
+Clarified the `CHATS.md` agent-block format: the ` ```markdown ` fence must contain the agent's
 **full, complete, verbatim response** — not a summary or paraphrase. Updated `PROTOCOL.md` and
-`AGENTS.md` to state this explicitly. Added this turn (Turn #8) to `CHATs.md`.
+`AGENTS.md` to state this explicitly. Added this turn (Turn #8) to `CHATS.md`.
 
 ````markdown
 Got it — apologies for the delay!
 
-The clarification is noted: the ` ```markdown ` fence in `CHATs.md` agent blocks must contain
+The clarification is noted: the ` ```markdown ` fence in `CHATS.md` agent blocks must contain
 the agent's **full, verbatim response** — not a summary. Every word, every code block,
 every list — the whole thing, exactly as written.
 
@@ -258,7 +258,7 @@ Updated:
 
 - **`PROTOCOL.md`** — section 2.3 now explicitly states the verbatim block = full response, not a summary.
 - **`AGENTS.md`** — rule 3 updated with the same clarification.
-- **`CHATs.md`** — this turn (Turn #8) added with your message and this full response.
+- **`CHATS.md`** — this turn (Turn #8) added with your message and this full response.
 
 **Security Summary:** Documentation-only changes. No vulnerabilities introduced.
 ````
@@ -266,7 +266,7 @@ Updated:
 #### Files Accessed
 
 - `AGENTS.md` — read and updated (rule 3 clarified: full response, not summary)
-- `CHATs.md` — read and updated (Turn #8 appended)
+- `CHATS.md` — read and updated (Turn #8 appended)
 - `PROTOCOL.md` — read and updated (section 2.3 clarified)
 - `PROMPT.md` — read
 
@@ -285,7 +285,7 @@ Now one more thing: Now, I'd like to also get a nice list of paths like a foot n
 ### Message #1 — Agent
 
 Added a `#### Files Accessed` subsection spec to `PROTOCOL.md` (section 2.4) and `AGENTS.md` (rule 10).
-Retroactively added `#### Files Accessed` subsections to all existing agent messages in `CHATs.md` (Turns 1–8).
+Retroactively added `#### Files Accessed` subsections to all existing agent messages in `CHATS.md` (Turns 1–8).
 Appended this turn (Turn #9) with its own Files Accessed list.
 
 ```markdown
@@ -296,7 +296,7 @@ Done — added a **Files Accessed** footnote section to every agent message. Her
 - **`PROTOCOL.md`** — new section 2.4 specifying the `#### Files Accessed` subsection format:
   one `#` deeper than the `###` message header, listing repo-local file paths with a brief note on what was done.
 - **`AGENTS.md`** — new rule 10 with the same specification.
-- **`CHATs.md`** — retroactively added `#### Files Accessed` subsections to all agent messages
+- **`CHATS.md`** — retroactively added `#### Files Accessed` subsections to all agent messages
   in Turns 1–8; reconstructed entries are marked `<!-- reconstructed -->`. Turn #9 added fresh.
 
 **Security Summary:** Documentation-only changes. No vulnerabilities introduced.
@@ -305,7 +305,7 @@ Done — added a **Files Accessed** footnote section to every agent message. Her
 #### Files Accessed
 
 - `AGENTS.md` — read and updated (rule 10 added: Files Accessed spec)
-- `CHATs.md` — read and fully rewritten with retroactive Files Accessed sections + Turn #9
+- `CHATS.md` — read and fully rewritten with retroactive Files Accessed sections + Turn #9
 - `PROTOCOL.md` — read and updated (section 2.4 added: Files Accessed spec)
 
 ---
@@ -340,7 +340,7 @@ of the attack surface is either gated behind credentials you control or requires
 your machine / GitHub's servers (for the Copilot Coding Agent, even that doesn't apply since the
 agent runs server-side).
 
-Created [`LLM-PARAMs`](./LLM-PARAMs.md) with the full reference —
+Created [`LLM-PARAMs`](./LLM-PARAMS.md) with the full reference —
 parameters table, exposure matrix, MITM analysis, reproducibility limits, mitigation checklist,
 and a `curl` example showing why the "just query the session" approach doesn't work.
 
@@ -354,7 +354,7 @@ right about that (and the least glamorous, agreed 😄).
 ## The short answer
 
 **Making the repo private is the single most effective action.** The full conversation is in
-`CHATs.md` — that's what gives someone the best chance at "reproducing" the session. Once the
+`CHATS.md` — that's what gives someone the best chance at "reproducing" the session. Once the
 repo is private, the conversation is gone from public view. Everything else is much harder to get.
 
 ---
@@ -371,7 +371,7 @@ the executive summary:
 | `model` (version)    | Exact checkpoint                        | ❌ No                       | ✅ Yes (+ `system_fingerprint` in responses) |
 | Embeddings model     | Vector model used for RAG               | ❌ No                       | ✅ Yes (if called client-side)               |
 | UTC timestamp        | Injected into system prompt             | ❌ No                       | ✅ Yes (inside system prompt)                |
-| Conversation history | The `messages` array                    | ✅ **Yes — via `CHATs.md`** | ✅ Yes                                       |
+| Conversation history | The `messages` array                    | ✅ **Yes — via `CHATS.md`** | ✅ Yes                                       |
 
 ### Why `curl` / Postman / OpenAPI UI won't work for session params
 
@@ -431,7 +431,7 @@ a Monte Carlo simulation without the exact RNG state and hardware — possible i
 | Someone infers system prompt by probing  | Accept the risk — the model is instructed to refuse, and the system prompt for this agent is GitHub's, not yours |
 | Someone with machine access does MITM    | Applies only to client-side Copilot; use full-disk encryption + don't install unknown root certs                 |
 | `system_fingerprint` reveals model build | Low risk; it's an opaque hash, reveals nothing about temperature or system prompt                                |
-| `CHATs.md` itself leaks the thread       | Private repo + access control. Optionally encrypt sensitive entries before committing.                           |
+| `CHATS.md` itself leaks the thread       | Private repo + access control. Optionally encrypt sensitive entries before committing.                           |
 
 ---
 
@@ -443,7 +443,7 @@ Full reference with tables, `curl` examples, and detailed MITM walkthrough:
 
 #### Files Accessed
 
-- `CHATs.md` — read (turn number) and appended (Turn #10)
+- `CHATS.md` — read (turn number) and appended (Turn #10)
 - `docs/llm-parameters.md` — created with the full LLM parameters reference
 
 ---
@@ -455,7 +455,7 @@ Full reference with tables, `curl` examples, and detailed MITM walkthrough:
 ```
 Thanks! Now wow, that was a mouthful... I'm gonna go have a bath and a walk now (not in that order of course lol). I'm tired of even typing this. But I'm glad I did. Can you please just make sure those docs show up in the mkdocs website nice and clean in the DEVELOPMENT.md? I want just to use it as a double check, because I'm about to deploy it in a domain live and just to make sure I'll keep note of not deploying or mentioning this chat (but yeah I still wanna use this chat it was an awesome experience)
 
-Like, I just mean update those `PROTOCOL.md`, `AGENTS.md`, `CHATs.md`, `PROTOCOL.md`; and add a new `DEPLOYMENT.md` (just with like these double checks I wanna do. For all I know now given this new info I've learned here, I don't actually need to share my repo at all. For all I know now, that's as basic as a double check necessary
+Like, I just mean update those `PROTOCOL.md`, `AGENTS.md`, `CHATS.md`, `PROTOCOL.md`; and add a new `DEPLOYMENT.md` (just with like these double checks I wanna do. For all I know now given this new info I've learned here, I don't actually need to share my repo at all. For all I know now, that's as basic as a double check necessary
 
 After all this chat was my work this whole afternoon (oh wow it finally stopped raining two days ago and the weather looks lovely for a quick late afternoon walk. See how this was actually real work? Despite what people claim about prompt engineering. And if prompts are the new code, this chat, and this session, is the code I write it and my intellectual property. And I don't wanna any Chinese smartypants thinking they can just copy this just because I signed a contract for them to build a phone part or whatever.
 
@@ -475,7 +475,7 @@ Enjoy your walk — well earned! 🌤️ Here's what I did:
 | Page                 | File                                       |
 | -------------------- | ------------------------------------------ |
 | Home                 | `docs/index.md`                            |
-| Chat History         | `docs/chats.md` (copy of `CHATs.md`)       |
+| Chat History         | `docs/chats.md` (copy of `CHATS.md`)       |
 | Protocol             | `docs/protocol.md` (copy of `PROTOCOL.md`) |
 | Agents Guide         | `docs/agents.md` (copy of `AGENTS.md`)     |
 | LLM Parameters       | `docs/llm-parameters.md` (already existed) |
@@ -485,7 +485,7 @@ Enjoy your walk — well earned! 🌤️ Here's what I did:
 
 - ☐ Repo is **private** before sharing the live URL
 - ☐ No API keys / tokens in any committed file
-- ☐ `CHATs.md` reviewed for anything sensitive
+- ☐ `CHATS.md` reviewed for anything sensitive
 - ☐ `site_url` in `mkdocs.yml` matches your target domain
 - ☐ GitHub Pages source set to "GitHub Actions"
 - ☐ `deploy.yml` workflow ran green on latest `main`
@@ -507,10 +507,10 @@ Enjoy your walk — well earned! 🌤️ Here's what I did:
 
 #### Files Accessed
 
-- `CHATs.md` — read (turn count) and appended (Turn #11)
+- `CHATS.md` — read (turn count) and appended (Turn #11)
 - `PROTOCOL.md` — read and copied to `docs/protocol.md`
 - `AGENTS.md` — read and copied to `docs/agents.md`
-- `docs/chats.md` — created as copy of root `CHATs.md`
+- `docs/chats.md` — created as copy of root `CHATS.md`
 - `docs/protocol.md` — created as copy of root `PROTOCOL.md`
 - `docs/agents.md` — created as copy of root `AGENTS.md`
 - `docs/deployment.md` — created (new deployment checklist)
@@ -541,7 +541,7 @@ lovely weather!
 
 #### Files Accessed
 
-- `CHATs.md` — read (turn count) and appended (Turn #12)
+- `CHATS.md` — read (turn count) and appended (Turn #12)
 
 ---
 
@@ -575,7 +575,7 @@ Simple reformatting task: the key decisions were (1) blockquotes vs. a code bloc
 #### Files Accessed
 
 - `docs/posts/001-o-surto.md` — reformatted as a bilingual poem layout
-- `docs/dev/CHATs.md` — read (turn count) and appended (Turn #13)
+- `docs/dev/CHATS.md` — read (turn count) and appended (Turn #13)
 
 ---
 
@@ -603,8 +603,8 @@ Two fixes in `docs/posts/001-o-surto.md`:
 
 2. **Signature** — updated to the classic poet convention:
 
-   *— Dodge*  
-   *x de 2026*
+    _— Dodge_  
+    _x de 2026_
 ```
 
 #### THOUGHTS
@@ -614,7 +614,7 @@ Trailing two-space line breaks are the standard CommonMark / MkDocs way to get p
 #### Files Accessed
 
 - `docs/posts/001-o-surto.md` — fixed line breaks and signature
-- `docs/dev/CHATs.md` — read (turn count) and appended (Turn #14)
+- `docs/dev/CHATS.md` — read (turn count) and appended (Turn #14)
 
 ---
 
@@ -649,7 +649,7 @@ MD009 is the only markdownlint rule that targets trailing whitespace, and two tr
 
 - `.markdownlint.json` — added `"MD009": false`
 - `docs/posts/001-o-surto.md` — restored two trailing spaces on stanza lines
-- `docs/dev/CHATs.md` — read (turn count) and appended (Turn #15)
+- `docs/dev/CHATS.md` — read (turn count) and appended (Turn #15)
 
 ---
 
@@ -686,4 +686,4 @@ EditorConfig is applied by VS Code itself (via the EditorConfig extension or bui
 
 - `.editorconfig` — added `trim_trailing_whitespace = false` to `[*.md]` section
 - `docs/posts/001-o-surto.md` — restored two trailing spaces on stanza lines
-- `docs/dev/CHATs.md` — read (turn count) and appended (Turn #16)
+- `docs/dev/CHATS.md` — read (turn count) and appended (Turn #16)

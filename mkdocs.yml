@@ -4,24 +4,20 @@ site_url: https://blog.diogenes.dev/
 
 docs_dir: docs
 
-nav:
-  - Home: index.md
-  - Posts:
-      - Index: posts/index.md
-      - O Surto - The Mother Of All Nightmares (🇬🇧🇧🇷): posts/001-o-surto-the-mother-of-all-nightmares.md
-      - O que devemos um ao outro (e a nós mesmos) (🇧🇷): posts/002-o-que-devemos-um-ao-outro.md
-
-  - Dev & AI stuff:
-      - Development:
-          - Home: dev/index.md
-          - Setup: dev/SETUP.md
-          - Chat History: dev/CHATs.md
-          - Protocol: dev/PROTOCOL.md
-          - Agents Guide: dev/AGENTS.md
-          - LLM Parameters: dev/LLM-PARAMs.md
-      - CI/CD:
-          - Home: ci/index.md
-          - Deployment Checklist: ci/DEPLOYMENT.md
+# nav:
+#   - Home: index.md
+#   - Posts: posts/
+#   - Dev & AI stuff:
+#       - Development:
+#           - Home: dev/index.md
+#           - Setup: dev/SETUP.md
+#           - Chat History: dev/CHATS.md
+#           - Protocol: dev/PROTOCOL.md
+#           - Agents Guide: dev/AGENTS.md
+#           - LLM Parameters: dev/LLM-PARAMS.md
+#       - CI/CD:
+#           - Home: ci/index.md
+#           - Deployment Checklist: ci/DEPLOYMENT.md
 
 theme:
   name: material
@@ -41,7 +37,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.expand
+    # - navigation.expand
     - content.code.copy
     - content.code.annotate
     - search.suggest
@@ -52,12 +48,13 @@ plugins:
   - section-index
   - privacy
   - tags
+  - awesome-nav
   - htmlproofer:
       enabled: !ENV [CI, false]
       raise_error: true # Fail build on broken links
   - gen-files:
       scripts:
-        - src/mkdocs_customize/gen_pages.py
+        - docs/src/mkdocs_customize/gen_pages.py
 
 extra_javascript:
   - https://unpkg.com/mermaid@11/dist/mermaid.min.js

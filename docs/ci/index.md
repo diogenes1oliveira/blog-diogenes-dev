@@ -1,1 +1,5 @@
-- [Deployment Checklist](DEPLOYMENT.md)
+# CI/CD
+
+| Link                                  | File            |
+| ------------------------------------- | --------------- |
+| [Deployment Checklist](DEPLOYMENT.md) | `DEPLOYMENT.md` |

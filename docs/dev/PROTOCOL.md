@@ -6,14 +6,14 @@ this file is sufficient.
 
 ---
 
-## 1. The canonical log: `CHATs.md`
+## 1. The canonical log: `CHATS.md`
 
-`CHATs.md` is the single source of truth for the full conversation history.
-`PROMPT.md` is a legacy file — do **not** update it unless `CHATs.md` does not yet exist.
+`CHATS.md` is the single source of truth for the full conversation history.
+`PROMPT.md` is a legacy file — do **not** update it unless `CHATS.md` does not yet exist.
 
 ---
 
-## 2. CHATs.md format
+## 2. CHATS.md format
 
 ### 2.1 Turn header
 
@@ -97,13 +97,13 @@ Before calling `report_progress` for the final commit:
 
 1. Determine the next turn number N (last `## Turn #N` in the file + 1, or 1 if empty).
 2. Append a new turn block with:
-   - `## Turn #N — <description>`
-   - `### Message #0 — @human` with the verbatim human message.
-   - `### Message #1 — Agent` with the formatted prose + verbatim block.
+    - `## Turn #N — <description>`
+    - `### Message #0 — @human` with the verbatim human message.
+    - `### Message #1 — Agent` with the formatted prose + verbatim block.
 
 ### 3.2 Retroactive reconstruction
 
-When `CHATs.md` is first created, or when gap turns are detected:
+When `CHATS.md` is first created, or when gap turns are detected:
 
 1. **Check for gaps**: scan `## Turn #N` headers — if N values are not sequential,
    turns are missing. Also check that every turn has a `### Message #0 — @human`.
@@ -116,7 +116,7 @@ When `CHATs.md` is first created, or when gap turns are detected:
 
 ## 4. Parsing algorithm
 
-To read or update `CHATs.md` programmatically:
+To read or update `CHATS.md` programmatically:
 
 ```python
 turns = {}
@@ -163,4 +163,4 @@ for line in chats_md_lines:
 | Files Accessed footnote | `#### Files Accessed` — one bullet per repo file, brief note |
 | Reconstructed message   | `<!-- reconstructed -->` after the `### Message` header      |
 | When to update          | before `report_progress`, same commit as other changes       |
-| Source of truth         | `CHATs.md` (not `PROMPT.md`)                                 |
+| Source of truth         | `CHATS.md` (not `PROMPT.md`)                                 |

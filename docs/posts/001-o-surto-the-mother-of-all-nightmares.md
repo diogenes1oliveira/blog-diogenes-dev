@@ -13,9 +13,9 @@
 
 ## O Pesadelo dos Pesadelos 🇧🇷
 
-> Eu fui no inferno e voltei  
+> Eu fui no Inferno e voltei  
 > O dedo do meio dei  
-> Pra própria morte c\*guei  
+> Pra própria Morte c\*guei  
 > E para Morfeu "_sou rei_"
 
 ---

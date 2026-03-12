@@ -1,8 +1,9 @@
 # Development
 
-- [Chat History](CHATs.md)
-- [Protocol](PROTOCOL.md)
-- [Agents Guide](AGENTS.md)
-- [LLM Parameters](LLM-PARAMs.md)
-- [Setup](SETUP.md)
-- [CI/CD](../ci/index.md)
+| Link                            | File            |
+| ------------------------------- | --------------- |
+| [Setup](SETUP.md)               | `SETUP.md`      |
+| [Chat History](CHATS.md)        | `CHATS.md`      |
+| [Protocol](PROTOCOL.md)         | `PROTOCOL.md`   |
+| [Agents Guide](AGENTS.md)       | `AGENTS.md`     |
+| [LLM Parameters](LLM-PARAMS.md) | `LLM-PARAMS.md` |

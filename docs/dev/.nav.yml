@@ -1,0 +1,7 @@
+nav:
+  - Home: index.md
+  - Setup: SETUP.md
+  - Chat History: CHATS.md
+  - Protocol: PROTOCOL.md
+  - Agents Guide: AGENTS.md
+  - LLM Parameters: LLM-PARAMS.md
