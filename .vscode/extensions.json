@@ -1,0 +1,21 @@
+{
+  "recommendations": [
+    "bierner.markdown-mermaid",
+    "bierner.markdown-preview-github-styles",
+    "editorconfig.editorconfig",
+    "ms-azuretools.vscode-containers",
+    "ms-python.black-formatter",
+    "ms-python.debugpy",
+    "ms-python.isort",
+    "ms-python.python",
+    "ms-vscode.makefile-tools",
+    "nefrob.vscode-just-syntax",
+    "oderwat.indent-rainbow",
+    "tamasfe.even-better-toml",
+    "ms-python.mypy-type-checker",
+    "charliermarsh.ruff",
+    "mkhl.shfmt",
+    "redhat.vscode-yaml",
+    "github.vscode-github-actions",
+  ]
+}
