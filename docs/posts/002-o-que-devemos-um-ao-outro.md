@@ -8,3 +8,9 @@
 - **Gratidão e gentileza sempre**. Mesmo antes de agredir alguém (hipoteticamente falando), é melhor ser educado.
 - Organizar meu tempo, meu ambiente e minhas relações é, na verdade, **organizar meu cérebro**.
 - Gratidão e orgulho saudável de minhas realizações: se foram por meios lícitos e éticos, **tudo que vier eu fiz por merecer**.
+
+---
+
+_— Dodge_
+
+_March 1st, 2026_
