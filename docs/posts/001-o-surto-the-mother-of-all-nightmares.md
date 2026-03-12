@@ -16,7 +16,7 @@
 > Eu fui no inferno e voltei  
 > O dedo do meio dei  
 > Pra própria morte c\*guei  
-> E para Morfeus "_sou rei_"
+> E para Morfeu "_sou rei_"
 
 ---
 
