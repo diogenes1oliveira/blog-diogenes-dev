@@ -34,12 +34,14 @@ code blocks — **in this order**:
 
 ---
 
-## ⚠️ CHATS.md Convention — PRIMARY PROTOCOL (supersedes PROMPT.md) ⚠️
+## ⚠️ Conversation Logging Convention — PRIMARY PROTOCOL (supersedes PROMPT.md) ⚠️
 
-**Every agent session must update `CHATS.md`** — the canonical conversation log.
+**Every agent session must update the conversation logs** by appending to a
+new per-session file under `docs/dev/chats/CHAT-XXXX.md`.
+
 The `PROMPT.md` section above is **legacy**; once `PROTOCOL.md` exists, skip it.
 
-### CHATS.md turn structure
+### Turn structure
 
 ```markdown
 ## Turn #N — <short description>
@@ -89,6 +91,36 @@ The `PROMPT.md` section above is **legacy**; once `PROTOCOL.md` exists, skip it.
 
 ---
 
+## Per-session chat files (`docs/dev/chats/CHAT-XXXX.md`)
+
+Each agent session **must** be logged in its own file under `docs/dev/chats/`,
+following the same turn/message format defined above and in `PROTOCOL.md`.
+
+- **One file per session**: when you first touch the conversation log in a new Cursor session,
+  create a fresh `docs/dev/chats/CHAT-XXXX.md` file for it.
+- **Naming**: use zero-padded, monotonically increasing numbers:
+  - `CHAT-0001.md`, `CHAT-0002.md`, `CHAT-0003.md`, …
+- **Header**: start each file with:
+
+  ```markdown
+  # Chat #N — Conversation Logs
+
+  Canonical conversation log for this repository.
+  See [PROTOCOL.md](../PROTOCOL.md) for the format specification.
+
+  ---
+  ```
+
+- **Content**: inside each `CHAT-XXXX.md`, append turns exactly as you would to `CHATS.md`
+  (same headers, verbatim blocks, THOUGHTS, and Files Accessed sections).
+- **Index**: keep `docs/dev/chats/devindex.md` in sync:
+  - Append a new row to the table for each new `CHAT-XXXX.md`.
+  - Use the next sequential index number and link to the new file.
+- **Append-only**: never rename or reuse an existing `CHAT-XXXX.md`; only append new turns
+  or retroactively reconstruct missing ones when needed.
+
+---
+
 ## Key Project Files
 
 Files every agent should know exist in this repository:
@@ -99,7 +131,8 @@ Files every agent should know exist in this repository:
 | `CHATS.md`               | Canonical conversation log — primary protocol                                       |
 | `PROTOCOL.md`            | Self-contained spec for the `CHATS.md` format                                       |
 | `AGENTS.md`              | This file — conventions and key-file reference for agents                           |
-| `EASTEREGG.md`           | Launch easter egg: lights-off (📴) terminal-style alert `$ ⏎` + upcoming issue note |
+| `docs/dev/chats/devindex.md` | Index of per-session chat files (`CHAT-XXXX.md`)                              |
+| `docs/dev/chats/CHAT-XXXX.md` | One file per agent session, full conversation log for that session           |
 | `docs/index.md`          | Main documentation home page                                                        |
 | `docs/dev/LLM-PARAMS.md` | LLM session-parameters reference (privacy, exposure, reproducibility)               |
 | `docs/ci/DEPLOYMENT.md`  | Pre-flight deployment checklist                                                     |

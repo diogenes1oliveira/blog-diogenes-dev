@@ -6,10 +6,15 @@ this file is sufficient.
 
 ---
 
-## 1. The canonical log: `CHATS.md`
+## 1. Canonical logs: per-session `CHAT-XXXX.md` files
 
-`CHATS.md` is the single source of truth for the full conversation history.
-`PROMPT.md` is a legacy file — do **not** update it unless `CHATS.md` does not yet exist.
+The canonical conversation logs live in **per-session files** under `docs/dev/chats/`,
+one file per agent session, named `CHAT-XXXX.md` (see section 6).
+
+`CHATS.md` and `PROMPT.md` are legacy/aggregate logs:
+
+- Do **not** create or update `PROMPT.md` for new work.
+- Do **not** create or update `CHATS.md` for new work unless explicitly asked.
 
 ---
 
@@ -163,4 +168,62 @@ for line in chats_md_lines:
 | Files Accessed footnote | `#### Files Accessed` — one bullet per repo file, brief note |
 | Reconstructed message   | `<!-- reconstructed -->` after the `### Message` header      |
 | When to update          | before `report_progress`, same commit as other changes       |
-| Source of truth         | `CHATS.md` (not `PROMPT.md`)                                 |
+| Source of truth         | Per-session `docs/dev/chats/CHAT-XXXX.md` files              |
+
+---
+
+## 6. Per-session chat files in `docs/dev/chats/`
+
+In addition to `CHATS.md`, every **agent session** (a single interactive chat run in Cursor)
+must be logged in its own file under `docs/dev/chats/`.
+
+### 6.1 File naming and index
+
+- **Directory**: `docs/dev/chats/`
+- **Naming**: `CHAT-XXXX.md` where `XXXX` is a zero-padded integer:
+  - `CHAT-0001.md`, `CHAT-0002.md`, `CHAT-0003.md`, …
+- **Index file**: `docs/dev/chats/devindex.md` keeps a table of all session files:
+
+  ```markdown
+  | Index | File                         |
+  | ----- | ---------------------------- |
+  | 1     | [CHAT-0001.md](CHAT-0001.md) |
+  | 2     | [CHAT-0002.md](CHAT-0002.md) |
+  | 3     | [CHAT-0003.md](CHAT-0003.md) |
+  ```
+
+- **Append-only**:
+  - When starting a **new agent session**, create a new `CHAT-XXXX.md` with the next number.
+  - Append a new row to `devindex.md` with the next sequential `Index` and a link to the file.
+  - Never rename or reuse an existing `CHAT-XXXX.md`.
+
+### 6.2 Session file header
+
+Each per-session file starts with:
+
+```markdown
+# Chat #N — Conversation Logs
+
+Canonical conversation log for this repository.
+See [PROTOCOL.md](../PROTOCOL.md) for the format specification.
+
+---
+```
+
+- `N` is the same integer used in the filename `CHAT-XXXX.md` (without zero-padding).
+
+### 6.3 Session file contents
+
+Inside each `CHAT-XXXX.md`:
+
+- Use **exactly** the same turn/message format as in sections 2–3:
+  - `## Turn #N — <description>`
+  - `### Message #0 — @human` with plain fenced code block (no language tag)
+  - `### Message #1 — Agent` with formatted prose + verbatim ` ```markdown ` block
+  - Optional `#### THOUGHTS`
+  - Required `#### Files Accessed` when repo files are touched
+- Treat each per-session file as **append-only**, except when retroactively reconstructing
+  missing turns or messages (use `<!-- reconstructed -->` markers as usual).
+
+`CHATS.md` may aggregate turns across sessions; `docs/dev/chats/CHAT-XXXX.md` files
+provide the per-session view. Both should remain consistent with this protocol.
