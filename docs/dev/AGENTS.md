@@ -3,8 +3,8 @@
 ## Prompt History Convention
 
 Every time an agent works on this repository, it **must** append both sides of
-the current conversation turn to [dev/CHATS.md](CHATS.md) as two separate, fenced plaintext
-code blocks — **in this order**:
+the current conversation turn to the appropriate per-session chat file under
+`docs/dev/chats/CHAT-XXXX.md` as two separate, fenced plaintext code blocks — **in this order**:
 
 1. **User block** — the exact user message that triggered this session.
 2. **Agent block** — a concise summary of what the agent did / replied.
@@ -106,7 +106,7 @@ following the same turn/message format defined above and in `PROTOCOL.md`.
   # Chat #N — Conversation Logs
 
   Canonical conversation log for this repository.
-  See [PROTOCOL.md](../PROTOCOL.md) for the format specification.
+  See [PROTOCOL.md](./PROTOCOL.md) for the format specification.
 
   ---
   ```
@@ -127,9 +127,9 @@ Files every agent should know exist in this repository:
 
 | File                     | Purpose                                                                             |
 | ------------------------ | ----------------------------------------------------------------------------------- |
-| `PROMPT.md`              | Legacy per-turn conversation log (append-only, superseded by `CHATS.md`)            |
-| `CHATS.md`               | Canonical conversation log — primary protocol                                       |
-| `PROTOCOL.md`            | Self-contained spec for the `CHATS.md` format                                       |
+| `PROMPT.md`              | Legacy per-turn conversation log (append-only, superseded by per-session files)     |
+| `CHATS.md`               | Legacy aggregate conversation log (no longer updated for new work)                  |
+| `PROTOCOL.md`            | Self-contained spec for the conversation log format                                 |
 | `AGENTS.md`              | This file — conventions and key-file reference for agents                           |
 | `docs/dev/chats/devindex.md` | Index of per-session chat files (`CHAT-XXXX.md`)                              |
 | `docs/dev/chats/CHAT-XXXX.md` | One file per agent session, full conversation log for that session           |

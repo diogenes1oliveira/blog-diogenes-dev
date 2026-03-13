@@ -18,7 +18,7 @@ one file per agent session, named `CHAT-XXXX.md` (see section 6).
 
 ---
 
-## 2. CHATS.md format
+## 2. CHATS.md format (legacy)
 
 ### 2.1 Turn header
 
@@ -108,7 +108,7 @@ Before calling `report_progress` for the final commit:
 
 ### 3.2 Retroactive reconstruction
 
-When `CHATS.md` is first created, or when gap turns are detected:
+When `CHATS.md` is first created, or when gap turns are detected (for legacy logs only):
 
 1. **Check for gaps**: scan `## Turn #N` headers — if N values are not sequential,
    turns are missing. Also check that every turn has a `### Message #0 — @human`.
@@ -121,7 +121,7 @@ When `CHATS.md` is first created, or when gap turns are detected:
 
 ## 4. Parsing algorithm
 
-To read or update `CHATS.md` programmatically:
+To read or update `CHATS.md` programmatically (for legacy logs):
 
 ```python
 turns = {}
@@ -174,7 +174,7 @@ for line in chats_md_lines:
 
 ## 6. Per-session chat files in `docs/dev/chats/`
 
-In addition to `CHATS.md`, every **agent session** (a single interactive chat run in Cursor)
+In addition to any legacy aggregate `CHATS.md` log, every **agent session** (a single interactive chat run in Cursor)
 must be logged in its own file under `docs/dev/chats/`.
 
 ### 6.1 File naming and index

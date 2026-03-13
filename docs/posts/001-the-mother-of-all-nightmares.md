@@ -1,4 +1,3 @@
-# O Surto - The Mother Of All Nightmares
 
 ---
 

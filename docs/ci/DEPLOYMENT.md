@@ -9,12 +9,12 @@
 ### Privacy & confidentiality
 
 - [ ] **Repository is set to Private.**
-      The conversation log (`dev/CHATS.md`) and protocol files contain a full record of this
+      The conversation logs under `dev/chats/` and protocol files contain a full record of this
       session. If you do not want it public, the repo **must** be private before you share
       the live URL with anyone.
 - [ ] **No API keys, tokens, or credentials appear in any committed file.**
       Run a quick scan: `git grep -r "sk-" && git grep -r "ghp_"` — both should return nothing.
-- [ ] **`CHATS.md` does not contain anything you consider sensitive.**
+- [ ] **Per-session chat logs (`dev/chats/CHAT-XXXX.md`) do not contain anything you consider sensitive.**
       Review the conversation log. If needed, redact entries before deploying.
 - [ ] **`docs/llm-parameters.md` is intentional.**
       This file documents LLM session parameters and privacy considerations.
@@ -59,8 +59,8 @@ To serve the site from your own domain (e.g. **001481.xyz**) on Cloudflare:
 
 | Item                                           | Why                                             |
 | ---------------------------------------------- | ----------------------------------------------- |
-| This repo URL (while public)                   | Exposes full conversation history in `CHATS.md` |
-| Direct link to `CHATS.md`                      | Contains verbatim session transcript            |
+| This repo URL (while public)                   | Exposes full conversation history in per-session chat logs |
+| Direct link to a per-session chat log          | Contains verbatim session transcript                      |
 | Your GitHub API / Copilot subscription details | Personal credentials                            |
 | The system prompt contents                     | Internal agent instructions                     |
 
