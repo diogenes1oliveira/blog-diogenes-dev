@@ -1,5 +1,5 @@
 nav:
   - Home: ./index.md
-  - Posts: ./posts/
+  - Blog: ./blog/
   - Dev & AI stuff: ./dev/
   - CI/CD: ./ci/

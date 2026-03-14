@@ -44,6 +44,7 @@ theme:
     - search.highlight
 
 plugins:
+  - blog
   - search
   - section-index
   - privacy
@@ -59,6 +60,9 @@ plugins:
 extra_javascript:
   - https://unpkg.com/mermaid@11/dist/mermaid.min.js
   - src/mkdocs_customize/mermaid-init.js
+
+extra_css:
+  - src/mkdocs_customize/extra.css
 
 markdown_extensions:
   - pymdownx.superfences:

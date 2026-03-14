@@ -1,3 +1,9 @@
+---
+hide:
+    - toc
+    - navigation
+---
+
 # [`diogenes.dev`](https://blog.diogenes.dev)
 
 > A blog about programming, data engineering and even more random stuff
@@ -9,13 +15,13 @@
 
 ## Dev & AI stuff
 
-| Link                                       | File            |
-| ------------------------------------------ | --------------- |
-| [Setup](dev/SETUP.md)                      | `SETUP.md`      |
+| Link                                         | File            |
+| -------------------------------------------- | --------------- |
+| [Setup](dev/SETUP.md)                        | `SETUP.md`      |
 | [Chat Sessions Index](dev/chats/devindex.md) | `devindex.md`   |
-| [Protocol](dev/PROTOCOL.md)                | `PROTOCOL.md`   |
-| [Agents Guide](dev/AGENTS.md)              | `AGENTS.md`     |
-| [LLM Parameters](dev/LLM-PARAMS.md)        | `LLM-PARAMS.md` |
+| [Protocol](dev/PROTOCOL.md)                  | `PROTOCOL.md`   |
+| [Agents Guide](dev/AGENTS.md)                | `AGENTS.md`     |
+| [LLM Parameters](dev/LLM-PARAMS.md)          | `LLM-PARAMS.md` |
 
 ## CI/CD
 

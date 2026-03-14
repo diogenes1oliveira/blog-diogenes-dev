@@ -1,3 +1,8 @@
+---
+date: 2026-03-01
+title: O que devemos uns ao outros 🇧🇷
+---
+
 # O que devemos uns ao outros
 
 - Escutar o outro **de verdade**;

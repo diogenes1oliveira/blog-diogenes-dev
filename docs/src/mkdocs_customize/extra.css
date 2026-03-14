@@ -1,0 +1,11 @@
+/* When both navigation and TOC are hidden, center the main content */
+.md-hidden--navigation.md-hidden--toc .md-main__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.md-hidden--navigation.md-hidden--toc .md-content {
+  max-width: 50rem;  /* Adjust this value to your preferred reading width */
+  width: 100%;
+}
+

@@ -1,4 +1,6 @@
-
+---
+date: 2026-02-24
+title: O Pesadelo dos Pesadelos (The Mother Of All Nightmares) 🇬🇧🇧🇷
 ---
 
 ## The Mother Of All Nightmares 🇬🇧
