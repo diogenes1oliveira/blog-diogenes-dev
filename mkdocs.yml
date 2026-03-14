@@ -55,14 +55,14 @@ plugins:
       raise_error: true # Fail build on broken links
   - gen-files:
       scripts:
-        - docs/src/mkdocs_customize/gen_pages.py
+        - src/mkdocs_customize/gen_pages.py
 
 extra_javascript:
   - https://unpkg.com/mermaid@11/dist/mermaid.min.js
-  - src/mkdocs_customize/mermaid-init.js
+  - assets/mermaid-init.js
 
 extra_css:
-  - src/mkdocs_customize/extra.css
+  - assets/extra.css
 
 markdown_extensions:
   - pymdownx.superfences:

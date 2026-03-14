@@ -1,7 +1,8 @@
 nav:
   - Home: index.md
   - Setup: SETUP.md
-  - Chat History: CHATS.md
+  - Chat History: chats/devindex.md
   - Protocol: PROTOCOL.md
   - Agents Guide: AGENTS.md
   - LLM Parameters: LLM-PARAMS.md
+  - Deployment Checklist: DEPLOYMENT.md

@@ -7,3 +7,4 @@
 | [Protocol](PROTOCOL.md)           | `PROTOCOL.md`       |
 | [Agents Guide](AGENTS.md)         | `AGENTS.md`         |
 | [LLM Parameters](LLM-PARAMS.md)   | `LLM-PARAMS.md`     |
+| [Deployment](DEPLOYMENT.md)       | `DEPLOYMENT.md`     |

@@ -1,26 +1,17 @@
 ---
 date: 2026-02-24
-title: O Pesadelo dos Pesadelos (The Mother Of All Nightmares) 🇬🇧🇧🇷
+title: The Mother Of All Nightmares
+authors:
+    - dodge
+categories:
+    - Poems
 ---
-
-## The Mother Of All Nightmares 🇬🇧
 
 > From Hell back I came  
 > To Death: "not today"  
 > Defiance out on display  
-> And, to Morpheus: "_sou rei_"
+> And, to Morpheus: "_sou rei_" [*]
+
+> \* from Portuguese: "I'm king"
 
 ---
-
-## O Pesadelo dos Pesadelos 🇧🇷
-
-> Eu fui no Inferno e voltei  
-> O dedo do meio dei  
-> Pra própria Morte c\*guei  
-> E para Morfeu "_sou rei_"
-
----
-
-_— Dodge_
-
-_February 24th, 2026_

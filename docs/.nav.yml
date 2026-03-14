@@ -1,5 +1,4 @@
 nav:
   - Home: ./index.md
-  - Blog: ./blog/
-  - Dev & AI stuff: ./dev/
-  - CI/CD: ./ci/
+  - Blog: ./blog/index.md
+  - Dev (meta): ./meta/index.md

@@ -1,9 +1,11 @@
 ---
 date: 2026-03-01
-title: O que devemos uns ao outros 🇧🇷
+title: O que devemos uns ao outros
+authors:
+    - dodge
+categories:
+    - Personal
 ---
-
-# O que devemos uns ao outros
 
 - Escutar o outro **de verdade**;
 - **Respeitar** o tempo, a vez, a história, o espaço e a identidade de cada um;
@@ -15,7 +17,3 @@ title: O que devemos uns ao outros 🇧🇷
 - Gratidão e orgulho saudável de minhas realizações: se foram por meios lícitos e éticos, **tudo que vier eu fiz por merecer**.
 
 ---
-
-_— Dodge_
-
-_March 1st, 2026_
