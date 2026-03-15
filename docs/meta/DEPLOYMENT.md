@@ -57,12 +57,12 @@ To serve the site from your own domain (e.g. **001481.xyz**) on Cloudflare:
 
 ## ⚠️ What NOT to share
 
-| Item                                           | Why                                             |
-| ---------------------------------------------- | ----------------------------------------------- |
+| Item                                           | Why                                                        |
+| ---------------------------------------------- | ---------------------------------------------------------- |
 | This repo URL (while public)                   | Exposes full conversation history in per-session chat logs |
-| Direct link to a per-session chat log          | Contains verbatim session transcript                      |
-| Your GitHub API / Copilot subscription details | Personal credentials                            |
-| The system prompt contents                     | Internal agent instructions                     |
+| Direct link to a per-session chat log          | Contains verbatim session transcript                       |
+| Your GitHub API / Copilot subscription details | Personal credentials                                       |
+| The system prompt contents                     | Internal agent instructions                                |
 
 ---
 
@@ -71,7 +71,7 @@ To serve the site from your own domain (e.g. **001481.xyz**) on Cloudflare:
 | Item                                                                                  | Notes                                                                                   |
 | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | The **live mkdocs URL** (private repo → Pages still works for users with repo access) | Only users with repository read access can view the Pages site when the repo is private |
-| `docs/llm-parameters.md` reference                                                    | Generic LLM knowledge, no credentials                                                   |
+| `./LLM-PARAMS.md` reference                                                           | Generic LLM knowledge, no credentials                                                   |
 | `PROTOCOL.md`                                                                         | Agent logging spec — no personal data                                                   |
 
 ---

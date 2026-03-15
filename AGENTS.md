@@ -1,1 +1,1 @@
-Refer to docs/dev/AGENTS.md
+Refer to docs/meta/AGENTS.md

@@ -1,7 +1,7 @@
 ---
 hide:
-    - toc
     - navigation
+    # - toc
 ---
 
 # [`diogenes.dev`](https://diogenes.dev)

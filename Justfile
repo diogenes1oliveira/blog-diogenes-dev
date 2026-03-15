@@ -29,11 +29,6 @@ build:
     rm -rf site/
     uv run mkdocs build
 
-# Convert all markdown files to HTML and chatbot YAML
-[group('ci')]
-md2html out="out":
-    uv run python .dev/md2html.py --out-dir {{ out }}
-
 # Deploy the site to Cloudflare Pages
 [group('ci')]
 deploy: build
