@@ -76,4 +76,4 @@ To serve the site from your own domain (e.g. **001481.xyz**) on Cloudflare:
 
 ---
 
-> _See [LLM Parameters](../dev/LLM-PARAMS.md) for the full privacy and reproducibility analysis._
+> _See [LLM Parameters](./LLM-PARAMS.md) for the full privacy and reproducibility analysis._

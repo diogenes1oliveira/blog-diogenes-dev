@@ -37,6 +37,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.footer
     # - navigation.expand
     - content.code.copy
     - content.code.annotate
@@ -56,6 +57,13 @@ plugins:
   - gen-files:
       scripts:
         - src/mkdocs_customize/gen_pages.py
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
 
 extra_javascript:
   - https://unpkg.com/mermaid@11/dist/mermaid.min.js
