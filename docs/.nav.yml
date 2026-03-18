@@ -1,4 +1,5 @@
 nav:
   - Home: ./index.md
   - Blog: ./blog/index.md
+  - Tags: ./tags.md
   - Dev (meta): ./meta/index.md
