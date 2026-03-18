@@ -1,5 +1,16 @@
 # AGENTS.md
 
+## Documentation maintenance
+
+When making changes that affect how the project is built, run, or structured:
+
+- **Development instructions** — add or update `docs/meta/DEVELOPMENT.md` (setup, scripts, workflows).
+- **Architecture** — update `ARCHITECTURE.md` at the repo root (high-level layout, main packages, boundaries).
+
+Do this in the same session as the change so docs stay in sync.
+
+---
+
 ## Prompt History Convention
 
 Every time an agent works on this repository, it **must** append both sides of
@@ -131,6 +142,8 @@ Files every agent should know exist in this repository:
 | `CHATS.md`               | Legacy aggregate conversation log (no longer updated for new work)                  |
 | `PROTOCOL.md`            | Self-contained spec for the conversation log format                                 |
 | `AGENTS.md`              | This file — conventions and key-file reference for agents                           |
+| `docs/meta/DEVELOPMENT.md` | Development setup, scripts, and workflows (keep updated when changing build/run)   |
+| `ARCHITECTURE.md`        | High-level project layout and main packages (keep updated when changing structure)  |
 | `docs/dev/chats/devindex.md` | Index of per-session chat files (`CHAT-XXXX.md`)                              |
 | `docs/dev/chats/CHAT-XXXX.md` | One file per agent session, full conversation log for that session           |
 | `docs/index.md`          | Main documentation home page                                                        |

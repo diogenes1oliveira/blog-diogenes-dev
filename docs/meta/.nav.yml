@@ -1,6 +1,6 @@
 nav:
   - Home: index.md
-  - Setup: SETUP.md
+  - Development: DEVELOPMENT.md
   - Chat History: chats/devindex.md
   - Protocol: PROTOCOL.md
   - Agents Guide: AGENTS.md

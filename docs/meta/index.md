@@ -2,7 +2,7 @@
 
 | Link                              | File                |
 | --------------------------------- | ------------------- |
-| [Setup](SETUP.md)                 | `SETUP.md`          |
+| [Development](DEVELOPMENT.md)     | `DEVELOPMENT.md`    |
 | [Chat History](chats/devindex.md) | `chats/devindex.md` |
 | [Protocol](PROTOCOL.md)           | `PROTOCOL.md`       |
 | [Agents Guide](AGENTS.md)         | `AGENTS.md`         |
