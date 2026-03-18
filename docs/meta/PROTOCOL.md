@@ -8,7 +8,7 @@ this file is sufficient.
 
 ## 1. Canonical logs: per-session `CHAT-XXXX.md` files
 
-The canonical conversation logs live in **per-session files** under `docs/dev/chats/`,
+The canonical conversation logs live in **per-session files** under `docs/meta/chats/`,
 one file per agent session, named `CHAT-XXXX.md` (see section 6).
 
 `CHATS.md` and `PROMPT.md` are legacy/aggregate logs:
@@ -168,21 +168,21 @@ for line in chats_md_lines:
 | Files Accessed footnote | `#### Files Accessed` — one bullet per repo file, brief note |
 | Reconstructed message   | `<!-- reconstructed -->` after the `### Message` header      |
 | When to update          | before `report_progress`, same commit as other changes       |
-| Source of truth         | Per-session `docs/dev/chats/CHAT-XXXX.md` files              |
+| Source of truth         | Per-session `docs/meta/chats/CHAT-XXXX.md` files              |
 
 ---
 
-## 6. Per-session chat files in `docs/dev/chats/`
+## 6. Per-session chat files in `docs/meta/chats/`
 
 In addition to any legacy aggregate `CHATS.md` log, every **agent session** (a single interactive chat run in Cursor)
-must be logged in its own file under `docs/dev/chats/`.
+must be logged in its own file under `docs/meta/chats/`.
 
 ### 6.1 File naming and index
 
-- **Directory**: `docs/dev/chats/`
+- **Directory**: `docs/meta/chats/`
 - **Naming**: `CHAT-XXXX.md` where `XXXX` is a zero-padded integer:
   - `CHAT-0001.md`, `CHAT-0002.md`, `CHAT-0003.md`, …
-- **Index file**: `docs/dev/chats/devindex.md` keeps a table of all session files:
+- **Index file**: `docs/meta/chats/devindex.md` keeps a table of all session files:
 
   ```markdown
   | Index | File                         |
@@ -225,5 +225,5 @@ Inside each `CHAT-XXXX.md`:
 - Treat each per-session file as **append-only**, except when retroactively reconstructing
   missing turns or messages (use `<!-- reconstructed -->` markers as usual).
 
-`CHATS.md` may aggregate turns across sessions; `docs/dev/chats/CHAT-XXXX.md` files
+`CHATS.md` may aggregate turns across sessions; `docs/meta/chats/CHAT-XXXX.md` files
 provide the per-session view. Both should remain consistent with this protocol.

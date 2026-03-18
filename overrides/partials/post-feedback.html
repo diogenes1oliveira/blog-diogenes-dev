@@ -1,0 +1,54 @@
+{# ── Post feedback widget ─────────────────────────────────── #}
+<div class="post-feedback" data-slug="{{ page.file.src_path | replace('.md', '') }}">
+  <p class="post-feedback__question">What did you think of this post?</p>
+  <form method="get" class="post-feedback__form" onsubmit="return false;">
+    <div class="post-feedback__buttons">
+      <button
+        type="submit"
+        name="reaction"
+        value="like"
+        class="post-feedback__btn post-feedback__btn--like"
+        id="post-feedback-like"
+        aria-label="I liked this post"
+        title="I liked this post"
+        onclick="postFeedback(this, 'like')"
+      >
+        😊
+      </button>
+      <button
+        type="submit"
+        name="reaction"
+        value="dislike"
+        class="post-feedback__btn post-feedback__btn--dislike"
+        id="post-feedback-dislike"
+        aria-label="I disliked this post"
+        title="I disliked this post"
+        onclick="postFeedback(this, 'dislike')"
+      >
+        😕
+      </button>
+    </div>
+  </form>
+</div>
+
+<script>
+  (function() {
+    var initFeedback = function() {
+      var widget = document.querySelector('.post-feedback');
+      if (!widget) return;
+      var slugAttr = widget.getAttribute('data-slug') || window.location.pathname;
+      var slug = slugAttr.split('/').filter(Boolean).pop().replace('.md', '');
+      var key = '/posts/slug=' + slug + '/feedbacks/binary';
+      var storedValue = localStorage.getItem(key);
+      if (storedValue) {
+        var btn = widget.querySelector('button[value="' + storedValue + '"]');
+        if (btn) btn.classList.add('selected');
+      }
+    };
+    if (typeof document$ !== "undefined") {
+      document$.subscribe(initFeedback);
+    } else {
+      window.addEventListener('DOMContentLoaded', initFeedback);
+    }
+  })();
+</script>

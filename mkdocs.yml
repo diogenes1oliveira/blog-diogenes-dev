@@ -1,4 +1,4 @@
-site_name: Dodge's Blog
+site_name: Διογένης's Blog
 site_description: A blog about programming, data engineering and even more random stuff
 site_url: https://blog.diogenes.dev/
 
@@ -21,6 +21,7 @@ docs_dir: docs
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - scheme: default
       primary: deep purple
@@ -68,6 +69,7 @@ plugins:
 extra_javascript:
   - https://unpkg.com/mermaid@11/dist/mermaid.min.js
   - assets/mermaid-init.js
+  - assets/feedback.js
 
 extra_css:
   - assets/extra.css

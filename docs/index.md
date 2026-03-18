@@ -12,8 +12,8 @@ hide:
 
 ## Blog
 
-- [`blog.diogenes.dev`](https://blog.diogenes.dev/blog)
+- [`blog.diogenes.dev`](./blog/index.md)
 
 ## Meta-development
 
-- [`blog.diogenes.dev/meta`](https://blog.diogenes.dev/meta)
+- [`blog.diogenes.dev/meta`](./meta/index.md)

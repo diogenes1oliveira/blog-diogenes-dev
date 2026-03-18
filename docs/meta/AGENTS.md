@@ -15,7 +15,7 @@ Do this in the same session as the change so docs stay in sync.
 
 Every time an agent works on this repository, it **must** append both sides of
 the current conversation turn to the appropriate per-session chat file under
-`docs/dev/chats/CHAT-XXXX.md` as two separate, fenced plaintext code blocks — **in this order**:
+`docs/meta/chats/CHAT-XXXX.md` as two separate, fenced plaintext code blocks — **in this order**:
 
 1. **User block** — the exact user message that triggered this session.
 2. **Agent block** — a concise summary of what the agent did / replied.
@@ -48,7 +48,7 @@ the current conversation turn to the appropriate per-session chat file under
 ## ⚠️ Conversation Logging Convention — PRIMARY PROTOCOL (supersedes PROMPT.md) ⚠️
 
 **Every agent session must update the conversation logs** by appending to a
-new per-session file under `docs/dev/chats/CHAT-XXXX.md`.
+new per-session file under `docs/meta/chats/CHAT-XXXX.md`.
 
 The `PROMPT.md` section above is **legacy**; once `PROTOCOL.md` exists, skip it.
 
@@ -102,13 +102,13 @@ The `PROMPT.md` section above is **legacy**; once `PROTOCOL.md` exists, skip it.
 
 ---
 
-## Per-session chat files (`docs/dev/chats/CHAT-XXXX.md`)
+## Per-session chat files (`docs/meta/chats/CHAT-XXXX.md`)
 
-Each agent session **must** be logged in its own file under `docs/dev/chats/`,
+Each agent session **must** be logged in its own file under `docs/meta/chats/`,
 following the same turn/message format defined above and in `PROTOCOL.md`.
 
 - **One file per session**: when you first touch the conversation log in a new Cursor session,
-  create a fresh `docs/dev/chats/CHAT-XXXX.md` file for it.
+  create a fresh `docs/meta/chats/CHAT-XXXX.md` file for it.
 - **Naming**: use zero-padded, monotonically increasing numbers:
   - `CHAT-0001.md`, `CHAT-0002.md`, `CHAT-0003.md`, …
 - **Header**: start each file with:
@@ -124,7 +124,7 @@ following the same turn/message format defined above and in `PROTOCOL.md`.
 
 - **Content**: inside each `CHAT-XXXX.md`, append turns exactly as you would to `CHATS.md`
   (same headers, verbatim blocks, THOUGHTS, and Files Accessed sections).
-- **Index**: keep `docs/dev/chats/devindex.md` in sync:
+- **Index**: keep `docs/meta/chats/devindex.md` in sync:
   - Append a new row to the table for each new `CHAT-XXXX.md`.
   - Use the next sequential index number and link to the new file.
 - **Append-only**: never rename or reuse an existing `CHAT-XXXX.md`; only append new turns
@@ -144,8 +144,8 @@ Files every agent should know exist in this repository:
 | `AGENTS.md`              | This file — conventions and key-file reference for agents                           |
 | `docs/meta/DEVELOPMENT.md` | Development setup, scripts, and workflows (keep updated when changing build/run)   |
 | `ARCHITECTURE.md`        | High-level project layout and main packages (keep updated when changing structure)  |
-| `docs/dev/chats/devindex.md` | Index of per-session chat files (`CHAT-XXXX.md`)                              |
-| `docs/dev/chats/CHAT-XXXX.md` | One file per agent session, full conversation log for that session           |
+| `docs/meta/chats/devindex.md` | Index of per-session chat files (`CHAT-XXXX.md`)                              |
+| `docs/meta/chats/CHAT-XXXX.md` | One file per agent session, full conversation log for that session           |
 | `docs/index.md`          | Main documentation home page                                                        |
 | `docs/dev/LLM-PARAMS.md` | LLM session-parameters reference (privacy, exposure, reproducibility)               |
 | `docs/ci/DEPLOYMENT.md`  | Pre-flight deployment checklist                                                     |

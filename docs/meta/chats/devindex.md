@@ -5,3 +5,4 @@
 | 3     | [CHAT-0003.md](CHAT-0003.md) |
 | 4     | [CHAT-0004.md](CHAT-0004.md) |
 | 5     | [CHAT-0005.md](CHAT-0005.md) |
+| 6     | [CHAT-0006.md](CHAT-0006.md) |
