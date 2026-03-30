@@ -1,6 +1,6 @@
 ---
 date: 2026-03-18
-title: "It never is just a button: concerns when shipping code to user agents"
+title: "It never is just a button: concerns when running code in someone else's computer"
 authors:
     - dodge
 categories:
@@ -13,6 +13,14 @@ tags:
 
 > — "There was a button", Holden said. "I pushed it."  
 > — Jesus Christ. That really is how you go through life, isn't it?
+
+## Introduction
+
+Ever since JavaScript was introduced, we have had concerns with security issues leading to the current patchwork
+of rules, headers and sandbox that browsers have had to implement reactively. After billions of dollars invested,
+we have billions of devices running the best sandbox ever which is Chromium's V8. But is that enough?
+
+<!-- more -->
 
 ## POC
 
